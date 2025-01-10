@@ -1,25 +1,34 @@
+/* General Reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header Section */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -27,14 +36,36 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Section Styling */
 section {
-    padding: 20px;
     margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    background-color: #333;
     color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+<footer>
+    <p>&copy; <span id="year"></span> Zhuo Tong. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #00aaff;
 }
