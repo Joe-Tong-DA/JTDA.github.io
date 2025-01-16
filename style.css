@@ -1,0 +1,76 @@
+/*基础样式：背景颜色和字体*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 设置淡灰色背景 */
+    color: #333; /* 文字颜色 */
+    line-height: 1.6;
+}
+
+/*标题和导航栏*/
+header {
+    background-color: #4CAF50; /* 绿色背景 */
+    color: white; /* 白色文字 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* 去掉列表点 */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 居中对齐导航 */
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* 悬停时文字变成金色 */
+    text-decoration: underline; /* 加上下划线 */
+}
+
+/*内容板块*/
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px; /* 圆角 */
+    max-width: 800px; /* 设置内容宽度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+section h2 {
+    color: #4CAF50; /* 标题绿色 */
+    text-align: center; /* 标题居中 */
+}
+
+section p, section ul {
+    text-align: left; /* 内容左对齐 */
+}
+
+/*页脚*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
